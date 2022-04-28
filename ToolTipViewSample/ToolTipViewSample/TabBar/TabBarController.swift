@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import EasyTipView
 
 enum TabBarItem {
     case home, share, alarm, add
@@ -40,21 +41,22 @@ extension TabBarItem {
 }
 
 final class TabBarController: UITabBarController {
+    
+    let home = ContentViewController()
+    let share = ContentViewController()
+    let alarm = ContentViewController()
+    let add = ContentViewController()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         setupTabBar()
+        setupTipView()
     }
     
     private func setupTabBar() {
         tabBar.tintColor = .black
         tabBar.unselectedItemTintColor = .gray
         tabBar.backgroundColor = .white
-        
-        let home = ContentViewController()
-        let share = ContentViewController()
-        let alarm = ContentViewController()
-        let add = ContentViewController()
         
         home.tabBarItem = UITabBarItem(title: "홈", image: TabBarItem.home.Image, selectedImage: TabBarItem.home.selectedImage)
         share.tabBarItem = UITabBarItem(title: "공유", image: TabBarItem.share.Image, selectedImage: TabBarItem.share.selectedImage)
@@ -63,4 +65,25 @@ final class TabBarController: UITabBarController {
         
         setViewControllers([home, share, alarm, add], animated: false)
     }
+    
+    private func setupTipView() {
+        var preferences = EasyTipView.Preferences()
+        preferences.drawing.font = UIFont(name: "Futura-Medium", size: 13)!
+        preferences.drawing.foregroundColor = UIColor.white
+        preferences.drawing.backgroundColor = UIColor.black
+        preferences.drawing.arrowPosition = EasyTipView.ArrowPosition.bottom
+        
+        let tipView = EasyTipView(
+            text: "내 약을 추가하거나 친구에게 약스케줄을 전송할 수 있어요",
+            preferences: preferences
+        )
+        
+        tipView.show(animated: true, forItem: add.tabBarItem, withinSuperView: self.view)
+        
+        /// 3초 후에 dismiss
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + .seconds(3)) {
+            tipView.dismiss()
+        }
+    }
+
 }
