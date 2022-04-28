@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		85B55604EA8CBD8B303CD07B /* Pods_ToolTipViewSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91AA4837FA34534B7040B67C /* Pods_ToolTipViewSample.framework */; };
 		BD65083928197C1B009FEEFE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD65083828197C1B009FEEFE /* AppDelegate.swift */; };
 		BD65083B28197C1B009FEEFE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD65083A28197C1B009FEEFE /* SceneDelegate.swift */; };
 		BD65083D28197C1B009FEEFE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD65083C28197C1B009FEEFE /* ViewController.swift */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7ABBE685844A235CFCFA19DF /* Pods-ToolTipViewSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToolTipViewSample.release.xcconfig"; path = "Target Support Files/Pods-ToolTipViewSample/Pods-ToolTipViewSample.release.xcconfig"; sourceTree = "<group>"; };
+		91AA4837FA34534B7040B67C /* Pods_ToolTipViewSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ToolTipViewSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD65083528197C1B009FEEFE /* ToolTipViewSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToolTipViewSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD65083828197C1B009FEEFE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BD65083A28197C1B009FEEFE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		BD65084128197C1C009FEEFE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BD65084428197C1C009FEEFE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BD65084628197C1C009FEEFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC1D7E7606D3F4F5F755FC01 /* Pods-ToolTipViewSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToolTipViewSample.debug.xcconfig"; path = "Target Support Files/Pods-ToolTipViewSample/Pods-ToolTipViewSample.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85B55604EA8CBD8B303CD07B /* Pods_ToolTipViewSample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		443998530369ACEF4B933F2B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				91AA4837FA34534B7040B67C /* Pods_ToolTipViewSample.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4EA4BF574868F0841B965405 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FC1D7E7606D3F4F5F755FC01 /* Pods-ToolTipViewSample.debug.xcconfig */,
+				7ABBE685844A235CFCFA19DF /* Pods-ToolTipViewSample.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		BD65082C28197C1B009FEEFE = {
 			isa = PBXGroup;
 			children = (
 				BD65083728197C1B009FEEFE /* ToolTipViewSample */,
 				BD65083628197C1B009FEEFE /* Products */,
+				4EA4BF574868F0841B965405 /* Pods */,
+				443998530369ACEF4B933F2B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BD65084928197C1C009FEEFE /* Build configuration list for PBXNativeTarget "ToolTipViewSample" */;
 			buildPhases = (
+				4AA00347BAFA4824055536D8 /* [CP] Check Pods Manifest.lock */,
 				BD65083128197C1B009FEEFE /* Sources */,
 				BD65083228197C1B009FEEFE /* Frameworks */,
 				BD65083328197C1B009FEEFE /* Resources */,
+				0236DBC58E22EFB1C85502CA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0236DBC58E22EFB1C85502CA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ToolTipViewSample/Pods-ToolTipViewSample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ToolTipViewSample/Pods-ToolTipViewSample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ToolTipViewSample/Pods-ToolTipViewSample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4AA00347BAFA4824055536D8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ToolTipViewSample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BD65083128197C1B009FEEFE /* Sources */ = {
@@ -284,6 +353,7 @@
 		};
 		BD65084A28197C1C009FEEFE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC1D7E7606D3F4F5F755FC01 /* Pods-ToolTipViewSample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -312,6 +382,7 @@
 		};
 		BD65084B28197C1C009FEEFE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7ABBE685844A235CFCFA19DF /* Pods-ToolTipViewSample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
