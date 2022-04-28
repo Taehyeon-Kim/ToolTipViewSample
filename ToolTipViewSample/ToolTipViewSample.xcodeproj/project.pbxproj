@@ -8,10 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		85B55604EA8CBD8B303CD07B /* Pods_ToolTipViewSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91AA4837FA34534B7040B67C /* Pods_ToolTipViewSample.framework */; };
+		BD05DCAE281A7DD1005F8D96 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD05DCAD281A7DD1005F8D96 /* TabBarController.swift */; };
+		BD05DCB0281A7DF7005F8D96 /* ContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD05DCAF281A7DF7005F8D96 /* ContentViewController.swift */; };
 		BD65083928197C1B009FEEFE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD65083828197C1B009FEEFE /* AppDelegate.swift */; };
 		BD65083B28197C1B009FEEFE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD65083A28197C1B009FEEFE /* SceneDelegate.swift */; };
 		BD65083D28197C1B009FEEFE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD65083C28197C1B009FEEFE /* ViewController.swift */; };
-		BD65084028197C1B009FEEFE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD65083E28197C1B009FEEFE /* Main.storyboard */; };
 		BD65084228197C1C009FEEFE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD65084128197C1C009FEEFE /* Assets.xcassets */; };
 		BD65084528197C1C009FEEFE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD65084328197C1C009FEEFE /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -19,11 +20,12 @@
 /* Begin PBXFileReference section */
 		7ABBE685844A235CFCFA19DF /* Pods-ToolTipViewSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToolTipViewSample.release.xcconfig"; path = "Target Support Files/Pods-ToolTipViewSample/Pods-ToolTipViewSample.release.xcconfig"; sourceTree = "<group>"; };
 		91AA4837FA34534B7040B67C /* Pods_ToolTipViewSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ToolTipViewSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD05DCAD281A7DD1005F8D96 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		BD05DCAF281A7DF7005F8D96 /* ContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewController.swift; sourceTree = "<group>"; };
 		BD65083528197C1B009FEEFE /* ToolTipViewSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToolTipViewSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD65083828197C1B009FEEFE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BD65083A28197C1B009FEEFE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		BD65083C28197C1B009FEEFE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		BD65083F28197C1B009FEEFE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BD65084128197C1C009FEEFE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BD65084428197C1C009FEEFE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BD65084628197C1C009FEEFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -56,8 +58,16 @@
 				FC1D7E7606D3F4F5F755FC01 /* Pods-ToolTipViewSample.debug.xcconfig */,
 				7ABBE685844A235CFCFA19DF /* Pods-ToolTipViewSample.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		BD05DCAC281A7DBC005F8D96 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				BD05DCAD281A7DD1005F8D96 /* TabBarController.swift */,
+				BD05DCAF281A7DF7005F8D96 /* ContentViewController.swift */,
+			);
+			path = TabBar;
 			sourceTree = "<group>";
 		};
 		BD65082C28197C1B009FEEFE = {
@@ -81,10 +91,10 @@
 		BD65083728197C1B009FEEFE /* ToolTipViewSample */ = {
 			isa = PBXGroup;
 			children = (
+				BD05DCAC281A7DBC005F8D96 /* TabBar */,
 				BD65083828197C1B009FEEFE /* AppDelegate.swift */,
 				BD65083A28197C1B009FEEFE /* SceneDelegate.swift */,
 				BD65083C28197C1B009FEEFE /* ViewController.swift */,
-				BD65083E28197C1B009FEEFE /* Main.storyboard */,
 				BD65084128197C1C009FEEFE /* Assets.xcassets */,
 				BD65084328197C1C009FEEFE /* LaunchScreen.storyboard */,
 				BD65084628197C1C009FEEFE /* Info.plist */,
@@ -154,7 +164,6 @@
 			files = (
 				BD65084528197C1C009FEEFE /* LaunchScreen.storyboard in Resources */,
 				BD65084228197C1C009FEEFE /* Assets.xcassets in Resources */,
-				BD65084028197C1B009FEEFE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,7 +216,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD05DCB0281A7DF7005F8D96 /* ContentViewController.swift in Sources */,
 				BD65083D28197C1B009FEEFE /* ViewController.swift in Sources */,
+				BD05DCAE281A7DD1005F8D96 /* TabBarController.swift in Sources */,
 				BD65083928197C1B009FEEFE /* AppDelegate.swift in Sources */,
 				BD65083B28197C1B009FEEFE /* SceneDelegate.swift in Sources */,
 			);
@@ -216,14 +227,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		BD65083E28197C1B009FEEFE /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BD65083F28197C1B009FEEFE /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		BD65084328197C1C009FEEFE /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -364,7 +367,6 @@
 				INFOPLIST_FILE = ToolTipViewSample/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -393,7 +395,6 @@
 				INFOPLIST_FILE = ToolTipViewSample/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
